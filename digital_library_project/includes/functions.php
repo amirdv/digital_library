@@ -17,13 +17,15 @@
 	 * @param  string to be given to make safe for db
 	 * @return Status
 	 */ 
+	// comment
 	function mysql_prep($string) {
 		global $connection;
 		
 		$escaped_string = mysqli_real_escape_string($connection, $string);
 		return $escaped_string;
 	}
-	
+		// comment
+
 	/**
 	 * This will show if query return the result set.
 	 * @author Amir Hamzeh
